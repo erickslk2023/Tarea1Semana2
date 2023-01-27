@@ -1,11 +1,12 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
 using Tarea.Models;
 
-Expresion exprecion = new Expresion();
+Expresion expresion = new Expresion();
 {
-    num1 = 2;
-    num2 = 4;
+    expresion.num1 = 5;
+    expresion.num2 = 6;
 
 }
 
-
+Console.WriteLine(expresion.toString());
