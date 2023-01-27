@@ -9,44 +9,68 @@ namespace Tarea.Models
     internal class Expresion
     {
 
-        public int num1 { get; set; }
-        public int num2 { get; set; }
+        public double num1 { get; set; }
+        public double num2 { get; set; }
 
         public string toString()
         {
-            int sum = this.suma();
-            int res = this.resta();
-            int div=this.division();
-            int mul = this.multiplicacion();
-           
-            return $" La Suma de los numero es: {sum} \n" +
-                   $"La resta del los numero es: {res}\n" +
-                   $" La division de los numero es:{div}\n " +
-                   $" La multiplicacion de los numero es: {mul}\n";
+            double sum = this.suma();
+            double res = this.resta();
+            double div=this.division();
+            double mul = this.multiplicacion();
+            double may=this.mayor();
+            double men = this.menor();
+
+            return $" La Suma de los numero es: {sum}\n" +
+                   $" La resta del los numero es: {res}\n" +
+                   $" La division de los numero es: {div}\n" +
+                   $" La multiplicacion de los numero es: {mul}\n" +
+                   $" El numero mayo es:{may}\n" +
+                   $" El numero menos es:{men}";
 
 
 
 
 
         }
-        public int suma()
+        public double suma()
         {
             return num1 + num2;
         }
 
-        public int resta()
+        public double resta()
         {
             return num2 - num1;
         }
 
-        public int division() {
+        public double division() {
         return num2/ num1;
         }
 
-        public int multiplicacion() { 
+        public double multiplicacion() { 
             return num1*num2;
         }
 
+        public double mayor()
+
+        {
+            if (num1 > num2)
+            {
+                return num1;
+            }else 
+                return num2;
+        }
+
+        public double menor()
+
+        {
+            if (num1 < num2)
+            {
+                return num1;
+            }
+            else
+                return num2;
+        }
 
     }
 }

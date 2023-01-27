@@ -4,15 +4,15 @@ using Tarea.Models;
 
 Expresion expresion1 = new Expresion()
 {
-    num1 = 5,
-    num2 = 6,
+    num1 = 3,
+    num2 = 4,
 
 };
 
 Expresion expresion2 = new Expresion()
 {
-    num1 = 10,
-    num2 = 15,
+    num1 = 4,
+    num2 = 8,
 };
 
 List<Expresion> ListaExpresiones = new List<Expresion>();
